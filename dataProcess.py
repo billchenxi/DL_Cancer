@@ -18,6 +18,7 @@ for i in folders:
     source_folder = "./Desktop/CancerDLPaper/Cancer/" + i
     for gzfile in listdir(source_folder):
         if gzfile.endswith(".gz"):
+		
             base = os.path.splitext(gzfile)[0]
             dest_name = dest_folder + base + ".txt"
             print(dest_name)
